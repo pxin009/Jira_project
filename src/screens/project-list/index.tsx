@@ -2,7 +2,7 @@
 import { SearchPanel } from "./search-panel";
 import { List } from "./list";
 import { useEffect, useState } from "react";
-import { cleanObject, useMount, useDebounce } from "../../utils";
+import { cleanObject, useMount, useDebounce } from "../../utils/index";
 // import * as qs from "qs";
 import { useHttp } from "../../utils/http";
 // const apiUrl = process.env.REACT_APP_API_URL;
@@ -24,6 +24,7 @@ export const ProjectListScreen = () => {
     //   `${apiUrl}/projects?${qs.stringify(cleanObject(debouncedParam))}`
     // ).then(async (response) => {
     //   if (response.ok) {
+      //list即为项目list
     //     setList(await response.json());
     //   }
     // });
